@@ -74,7 +74,7 @@
       timeout-ms = <COMBO_TERM_FAST>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT1 LM1>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp LPAR>;
     };
 
@@ -82,7 +82,8 @@
       timeout-ms = <COMBO_TERM_FAST>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RT1 RM1>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp RPAR>;
     };
 
@@ -90,7 +91,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT2 LM2>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp LBKT>;
     };
 
@@ -98,7 +100,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RT2 RM2>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp RBKT>;
     };
 
@@ -106,7 +109,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LT3 LM3>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp LBRC>;
     };
 
@@ -114,7 +118,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RT3 RM3>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp RBRC>;
     };
 
@@ -122,7 +127,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LM1 LB1>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp LT>;
     };
 
@@ -130,7 +136,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RM1 RB1>;
-      layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      // layers = <BASE BASE_QWERTY SYM NUM NUM_WORD>;
+      layers = <BASE NAV SYM ADJ>;
       bindings = <&kp GT>;
     };
 
@@ -138,7 +145,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LM1 RM1>;
-      layers = <BASE BASE_QWERTY>;
+      // layers = <BASE BASE_QWERTY>;
+      layers = <BASE NAV SYM ADJ>;
 
 #ifdef HAS_CAPSLOCK
       bindings = <&caps_word_capslock >;
