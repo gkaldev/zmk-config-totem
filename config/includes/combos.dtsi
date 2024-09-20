@@ -169,7 +169,8 @@
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LH2 LH1 LH0>;
       // layers = <BASE BASE_QWERTY NAV NUM SYM>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NAV NUM SYM>;
+      // layers = <BASE NAV SYM ADJ>;
       bindings = <&kp RET>;
     };
 
@@ -178,7 +179,8 @@
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LH1 LH0>;
       // layers = <BASE BASE_QWERTY NAV NUM SYM>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NAV NUM SYM>;
+      // layers = <BASE NAV SYM ADJ>;
       bindings = <&kp BSPC>;
     };
 
@@ -203,7 +205,8 @@
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LM3 LM2 LM1>;
       // layers = <BASE BASE_QWERTY NUM NUM_WORD>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NUM NUM_WORD>;
+      // layers = <BASE NAV SYM ADJ>;
 
       #ifdef HAS_UROB
         bindings = <&nav_word>;
@@ -218,7 +221,8 @@
       require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LB3 LB2 LB1>;
       // layers = <BASE BASE_QWERTY NAV NAV_WORD>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NAV NUM_WORD>;
+      // layers = <BASE NAV SYM ADJ>;
 
       #ifdef HAS_UROB
         bindings = <&num_word>;
@@ -252,7 +256,8 @@
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <LM2 LM3 LM4>;
       // layers = <BASE BASE_QWERTY NAV NAV_WORD MOUSE_KEYS>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NAV NAV_WORD>;
+      // layers = <BASE NAV SYM ADJ>;
       bindings = <&tog MOUSE_KEYS>;
     };
 
@@ -260,8 +265,8 @@
       timeout-ms = <COMBO_TERM_SLOW>;
       // require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
       key-positions = <RM2 RM3 RM4>;
-      // layers = <BASE BASE_QWERTY NAV NAV_WORD MOUSE_KEYS>;
-      layers = <BASE NAV SYM ADJ>;
+      layers = <BASE NAV NAV_WORD>;
+      // layers = <BASE NAV SYM ADJ>;
       bindings = <&tog MOUSE_KEYS>;
     };
 #endif
