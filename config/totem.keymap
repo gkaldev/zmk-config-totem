@@ -25,12 +25,12 @@
 #define TVP1 4
 #define TVP2 5
 
-#include <settings.dtsi>
-#include <macros.dtsi>
-#include <combos.dtsi>
-#include <behaviors_homerow_mods.dtsi>
-#include <behaviors_mod_morph.dtsi>
-#include <behaviors_other.dtsi>
+#include <includes/settings.dtsi>
+#include <includes/macros.dtsi>
+#include <includes/combos.dtsi>
+#include <includes/behaviors_homerow_mods.dtsi>
+#include <includes/behaviors_mod_morph.dtsi>
+#include <includes/behaviors_other.dtsi>
 
 &mt {
   quick-tap-ms = <100>;
