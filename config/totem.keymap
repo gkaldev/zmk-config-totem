@@ -30,6 +30,7 @@
 
 #define HAS_UROB
 
+#include "includes/custom_keycodes.dtsi"
 #include "includes/settings.dtsi"
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
