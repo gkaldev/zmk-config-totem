@@ -141,45 +141,45 @@
             #endif
         };
 
-        #ifdef HAS_UROB
-            nav_word: nav_word {
-                compatible = "zmk,behavior-caps-word";
-                #binding-cells = <0>;
-                layers = <NAV_WORD>;
-                continue-list = <
-                    LEFT DOWN UP RIGHT
-                    PG_UP PG_DN
-                    MY_UNDO MY_CUT MY_COPY MY_PASTE
-                >;
-                ignore-modifiers;  // modifiers don't deactivate the layer
-            };
-        #else
-            nav_word: nav_word {
-                compatible = "zmk,behavior-none";
-                #binding-cells = <0>;
-            };
-        #endif
-
-        #ifdef HAS_UROB
-            sym_word: sym_word {
-                compatible = "zmk,behavior-caps-word";
-                #binding-cells = <0>;
-                layers = <SYM_WORD>;
-                continue-list = <
-                    CARET AMPERSAND PLUS EQUAL MINUS SLASH PIPE
-                    TILDE PERCENT UNDERSCORE EXCLAMATION DOLLAR SEMICOLON
-                    HASH COLON GRAVE ASTERISK BACKSLASH AT_SIGN
-                    RPAR LPAR RBKT LBKT RBRC LBRC GT LT
-                    BACKSPACE
-                >;
-                ignore-modifiers;  // modifiers don't deactivate the layer
-            };
-        #else
-            sym_word: sym_word {
-                compatible = "zmk,behavior-none";
-                #binding-cells = <0>;
-            };
-        #endif
+        // #ifdef HAS_UROB
+        //     nav_word: nav_word {
+        //         compatible = "zmk,behavior-caps-word";
+        //         #binding-cells = <0>;
+        //         layers = <NAV_WORD>;
+        //         continue-list = <
+        //             LEFT DOWN UP RIGHT
+        //             PG_UP PG_DN
+        //             MY_UNDO MY_CUT MY_COPY MY_PASTE
+        //         >;
+        //         ignore-modifiers;  // modifiers don't deactivate the layer
+        //     };
+        // #else
+        //     nav_word: nav_word {
+        //         compatible = "zmk,behavior-none";
+        //         #binding-cells = <0>;
+        //     };
+        // #endif
+        //
+        // #ifdef HAS_UROB
+        //     sym_word: sym_word {
+        //         compatible = "zmk,behavior-caps-word";
+        //         #binding-cells = <0>;
+        //         layers = <SYM_WORD>;
+        //         continue-list = <
+        //             CARET AMPERSAND PLUS EQUAL MINUS SLASH PIPE
+        //             TILDE PERCENT UNDERSCORE EXCLAMATION DOLLAR SEMICOLON
+        //             HASH COLON GRAVE ASTERISK BACKSLASH AT_SIGN
+        //             RPAR LPAR RBKT LBKT RBRC LBRC GT LT
+        //             BACKSPACE
+        //         >;
+        //         ignore-modifiers;  // modifiers don't deactivate the layer
+        //     };
+        // #else
+        //     sym_word: sym_word {
+        //         compatible = "zmk,behavior-none";
+        //         #binding-cells = <0>;
+        //     };
+        // #endif
 
 
         #ifdef HAS_UROB
