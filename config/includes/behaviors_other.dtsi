@@ -82,16 +82,16 @@
         * Double Tap: NUM_WORD layer
         * Triple Tap: NUM layer toggled
         */
-        td_num_layer: td_num_layer {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            #ifdef HAS_UROB
-                bindings = <&lt NUM DEL>, <&num_word>;
-            #else
-                bindings = <&lt NUM DEL>, <&tog NUM>;
-            #endif
-        };
+        // td_num_layer: td_num_layer {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <250>;
+        //     #ifdef HAS_UROB
+        //         bindings = <&lt NUM DEL>, <&num_word>;
+        //     #else
+        //         bindings = <&lt NUM DEL>, <&tog NUM>;
+        //     #endif
+        // };
 
         /*
         * Tap dancing nav layer
