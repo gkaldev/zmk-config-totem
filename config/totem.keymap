@@ -54,6 +54,8 @@
 //   tapping-term-ms = <170>;
 // };
 // tap: num-word | double-tap: sticky num-layer | hold: num-layer
+#define QUICK_TAP_MS 175
+
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num,
     flavor = "balanced";
