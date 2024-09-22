@@ -19,6 +19,18 @@
 
 #include "zmk-helpers/key-labels/totem.h"                                   // key-position labels
 #include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/greek.dtsi"
+#include "zmk-helpers/unicode-chars/german.dtsi"
+
+#define DEF 0
+#define NAV 1
+#define FN 2
+#define NUM 3
+#define SYS 4
+#define MOUSE 5
+
+#define XXX &none
+#define ___ &trans
 
 #define QUICK_TAP_MS 175
 
