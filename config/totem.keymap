@@ -73,9 +73,9 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &hm_l LSHFT A  &hm_l LALT S  &hm_l LCTRL D &hm_l LGUI F &kp G           &kp H       &hm_r RGUI J &hm_r RCTRL K &hm_r RALT L  &hm_r RSHFT SEMI
+                &hm_l LSHFT A  &hm_l LALT S  &hm_l LCTRL D &hm_l LGUI F &kp G           &kp H       &hm_r RGUI J &hm_r RCTRL K &hm_r RALT L  &hm_r RSHFT SQT
     &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
-                                        &lt NAV TAB   &lt_num_word NUM NUM   &lt NAV BSPC        &mm_shift_caps_word_r &mm_spc_unds_layer  &kp RET
+                                        &lt SYM TAB   &lt_num_word NUM NUM   &mm_shift_caps_word_l      &lt NAV BSPC        &mm_spc_unds_layer  &kp RET
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -178,12 +178,15 @@ label= "SYM"                               ;
 //                                     ┃           ┃    GIF    ┃    ADJUST    ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp KP_MULTIPLY   &kp SQT     &kp DQT       
-                &kp RA(A)   &trans      &kp RA(S)   &trans      &trans          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RA(O) 
-    &trans      &kp RA(F18) &kp RA(F19) &trans      &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp BSLH   &trans         
-                                        &trans      &trans        &mo ADJUST         &trans      &kp C_PP    &trans      
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+             &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                &kp CARET     &kp AMPS      &kp ASTERISK  &kp LPAR      &kp RPAR                 
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+             &sk LSHFT     &sk LALT      &sk LCTRL     &sk LGUI      ___                      &kp PLUS      &kp MINUS     &kp LBKT      &kp RBKT      &kp COLON             
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___      ___           ___           ___           ___           ___                      &kp EQUAL     &kp UNDER     &kp LBRC      &kp RBRC      &kp TILDE       ___
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+                                         ___           ___           ___                      &kp SEMI      &kp K_CANCEL   ___                 
+//╰──────╯                             ╰─────────────┴─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────┴─────────────╯                             ╰──────╯
                         >;
                 };
 
