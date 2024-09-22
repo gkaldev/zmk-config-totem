@@ -38,6 +38,8 @@
 #define TVP1 8
 #define TVP2 9
 
+#define ___ &trans
+
 #define HAS_UROB
 
 #include "includes/custom_keycodes.dtsi"
