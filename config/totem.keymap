@@ -19,6 +19,28 @@
 
 #include "zmk-helpers/key-labels/totem.h"                                   // key-position labels
 #include "zmk-helpers/helper.h"
+
+#define QUICK_TAP_MS 175
+
+&sk {  // sticky-key config
+    release-after-ms = <900>;  // release after 0.9s
+    quick-release;             // no double capitalization when rolling keys
+};
+
+&sl {  // sticky-layer config
+    ignore-modifiers;          // allow chording sticky mods & layers
+};
+
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&leader {  // leader-key config
+    timeout-ms = <650>;
+};
+
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
 #ifndef LH2
@@ -26,6 +48,24 @@
 #else
     #define KEYS_T LH2 LH1 LH0 RH0 RH1 RH2                                  // thumbs on 36+ keys
 #endif
+#ifndef LH2
+    #define THUMBS LH1 LH0 RH0 RH1                                          // thumbs on 34 keys
+#else
+    #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                  // thumbs on 36+ keys
+#endif
+
+// tap: num-word | double-tap: sticky num-layer | hold: num-layer
+#define SMART_NUM &smart_num NUM 0
+ZMK_HOLD_TAP(smart_num,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&num_dance>;
+)
+ZMK_TAP_DANCE(num_dance,
+    tapping-term-ms = <200>;
+    bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
+)
 
 #define BASE 0
 #define NAV_WORD 1
@@ -47,27 +87,6 @@
 #include "includes/behaviors_homerow_mods.dtsi"
 #include "includes/behaviors_mod_morph.dtsi"
 #include "includes/behaviors_other.dtsi"
-
-// &mt {
-//   quick-tap-ms = <100>;
-//   global-quick-tap;
-//   flavor = "tap-preferred";
-//   tapping-term-ms = <170>;
-// };
-// tap: num-word | double-tap: sticky num-layer | hold: num-layer
-#define QUICK_TAP_MS 175
-
-#define SMART_NUM &smart_num NUM 0
-ZMK_HOLD_TAP(smart_num,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&num_dance>;
-)
-ZMK_TAP_DANCE(num_dance,
-    tapping-term-ms = <200>;
-    bindings = <&num_word NUM>, <&sl NUM>;  // reverse this for sticky-num on single tap
-)
 
 / {
 
