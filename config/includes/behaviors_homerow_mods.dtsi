@@ -1,7 +1,7 @@
 // Make sure settings.dtsi is included before this file
 
 #define HM_TAPPING_TERM 300
-#define HM_TAPPING_TERM_FAST 200
+#define HM_TAPPING_TERM_FAST 175
 #define HM_PRIOR_IDLE 150
 
 / {
@@ -25,7 +25,7 @@
             bindings = <&kp>,  <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 
@@ -39,7 +39,7 @@
             bindings = <&kp>, <&kp>;
 
             flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM>;
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 

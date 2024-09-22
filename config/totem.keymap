@@ -48,13 +48,6 @@
 #include "includes/behaviors_mod_morph.dtsi"
 #include "includes/behaviors_other.dtsi"
 
-&mt {
-  quick-tap-ms = <100>;
-  global-quick-tap;
-  flavor = "tap-preferred";
-  tapping-term-ms = <170>;
-};
-
 / {
 
         keymap {
