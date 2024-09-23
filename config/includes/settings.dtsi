@@ -1,5 +1,9 @@
 // Make sure this file is included before all other files
 
+&sk {
+  quick-release
+};
+
 /*
  * Layer Tap Settings
  */
