@@ -168,7 +168,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp HOME>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_RALT|MOD_LALT)>;
         };
 
         /*
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp END>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            mods = <(MOD_RALT|MOD_LALT)>;
         };
 
         /*
