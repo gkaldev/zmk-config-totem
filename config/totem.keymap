@@ -73,13 +73,13 @@
         display-name = "Nav Word";
         bindings = <
 //╭──────╮ ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮ ╭──────╮ ╭────────────────┬────────────────┬────────────────┬────────────────┬────────────────╮ ╭──────╮
-             &trans           &trans           &kp LG(LEFT)     &none            &kp LG(RIGHT)               &kp PG_UP         &trans           &trans           &trans           &trans            
+             ___              ___              &kp LG(LEFT)     &none            &kp LG(RIGHT)               &kp PG_UP         ___              ___              ___              ___               
 //├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤
-             &trans           &kp LEFT         &mm_up_save      &kp RIGHT        &kp PG_DN                   &trans            &trans           &trans           &trans           &trans                    
+             ___              &kp LEFT         &mm_up_save      &kp RIGHT        &kp PG_DN                   ___               ___              ___              ___              ___                       
 //├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤
-   &trans    &trans           &mm_left_word_cut &mm_down_copy   &kp MY_RIGHT_W   &trans                      &trans            &trans           &trans           &trans           &trans           &trans
+   ___       ___              &mm_left_word_cut &mm_down_copy   &kp MY_RIGHT_W   ___                         ___               ___              ___              ___              ___              ___   
 //├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤
-                                &ltog LGUI NAV_WORD   &trans                &trans                           &trans                &trans                &trans
+                                &ltog LGUI NAV_WORD   ___                   ___                              ___                   ___                   ___   
 //╰──────╯                    ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰──────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯                    ╰──────╯
         >;
       };
@@ -88,13 +88,13 @@
         display-name = "Num Word";
         bindings = <
 //╭──────╮ ╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭──────╮ ╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭──────╮
-             &trans            &kp N7            &kp N8            &kp N9            &trans                       &trans            &trans            &trans            &trans            &trans
+             ___               &kp N7            &kp N8            &kp N9            ___                          ___               ___               ___               ___               ___   
 //├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤
-             &kp N0            &hm_l LALT N4     &hm_l LCTRL N5    &hm_l LGUI N6     &trans                       &trans            &trans            &trans            &trans            &trans
+             &kp N0            &hm_l LALT N4     &hm_l LCTRL N5    &hm_l LGUI N6     ___                          ___               ___               ___               ___               ___   
 //├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤
-   &trans    &kp N0            &kp N1            &kp N2            &kp N3            &trans                       &trans            &trans            &trans            &trans            &trans             &trans
+   ___       &kp N0            &kp N1            &kp N2            &kp N3            ___                          ___               ___               ___               ___               ___                ___   
 //├──────┤ ╰─────────────────┴─────────────────┴─────────────────┴─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯ ├──────┤
-                                     &ltog LGUI NUM_WORD   &trans                &trans                           &trans                &trans                &trans
+                                     &ltog LGUI NUM_WORD   ___                   ___                              ___                   ___                   ___   
 //╰──────╯                         ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰──────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯                         ╰──────╯
         >;
        //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
@@ -104,13 +104,13 @@
       display-name = "Sym Word";
       bindings = <
 // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮    ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮
-     &trans                   &kp LG(Q)                &kp LG(W)                &none                    &none                    &kp LG(GRAVE)                 &mm_plus_minus           &kp AMPERSAND            &kp PIPE                 &kp TILDE                &mm_grave_caret           &trans
+     ___                      &kp LG(Q)                &kp LG(W)                &none                    &none                    &kp LG(GRAVE)                 &mm_plus_minus           &kp AMPERSAND            &kp PIPE                 &kp TILDE                &mm_grave_caret           ___   
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-     &trans                   &kp LEFT_CONTROL         &kp LEFT_ALT             &kp LEFT_GUI             &td_shift_l              &swapper_cmd_tab              &kp EQUAL                &kp EXCLAMATION          &td_at_email             &kp HASH                 &kp ASTERISK              &trans
+     ___                      &kp LEFT_CONTROL         &kp LEFT_ALT             &kp LEFT_GUI             &td_shift_l              &swapper_cmd_tab              &kp EQUAL                &kp EXCLAMATION          &td_at_email             &kp HASH                 &kp ASTERISK              ___   
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-     &trans                   &kp LG(Z)                &kp LG(X)                &kp LG(C)                &none                    &kp LG(V)                     &kp PERCENT              &kp DOLLAR               &kp SEMICOLON            &kp COLON                &kp BACKSLASH             &trans
+     ___                      &kp LG(Z)                &kp LG(X)                &kp LG(C)                &none                    &kp LG(V)                     &kp PERCENT              &kp DOLLAR               &kp SEMICOLON            &kp COLON                &kp BACKSLASH             ___   
 // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
-                                                                                &ltog LGUI SYM_WORD      &trans                   &trans                        &trans                   &trans                   &trans
+                                                                                &ltog LGUI SYM_WORD      ___                      ___                           ___                      ___                      ___   
 //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
@@ -138,13 +138,13 @@ label= "NAVI"                              ;
         display-name = "Num";
         bindings = <
 //╭──────╮ ╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭──────╮ ╭─────────────────┬─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭──────╮
-             &trans            &kp N7            &kp N8            &kp N9            &trans                       &trans            &trans            &trans            &trans            &trans
+             ___               &kp N7            &kp N8            &kp N9            ___                          ___               ___               ___               ___               ___   
 //├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤
-             &kp N0            &hm_l LALT N4     &hm_l LCTRL N5    &hm_l LGUI N6     &trans                       &trans            &trans            &trans            &trans            &trans
+             &kp N0            &hm_l LALT N4     &hm_l LCTRL N5    &hm_l LGUI N6     ___                          ___               ___               ___               ___               ___   
 //├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├──────┤
-&mm_none_undo &kp N0           &kp N1            &kp N2            &kp N3            &mm_none_paste               &trans            &trans            &trans            &trans            &trans             &trans
+&mm_none_undo &kp N0           &kp N1            &kp N2            &kp N3            &mm_none_paste               ___               ___               ___               ___               ___                ___   
 //├──────┤ ╰─────────────────┴─────────────────┴─────────────────┴─────────────────┼─────────────────┤ ├──────┤ ├─────────────────┼─────────────────┼─────────────────┼─────────────────┴─────────────────╯ ├──────┤
-                                     &ltog LGUI NUM           &trans                   &trans                        &trans                   &trans                   &trans
+                                     &ltog LGUI NUM           ___                      ___                           ___                      ___                      ___   
 //╰──────╯                         ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰──────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯                         ╰──────╯
         >;
       };
@@ -192,10 +192,10 @@ label= "ADJUST"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &sys_reset  &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &sys_reset  &bt BT_CLR &out OUT_TOG ___         ___             ___         &kp F7      &kp F8      &kp F9      &kp F12
+                &bootloader &bt BT_NXT  ___         ___         ___             ___         &kp F4      &kp F5      &kp F6      &kp F11  
+    ___         ___         &bt BT_PRV  ___         ___         ___             ___         &kp F1      &kp F2      &kp F3      &kp F10     ___            
+                                        ___         ___         ___             ___         ___         ___         
                         >;
                 };
 
@@ -221,7 +221,7 @@ label= "TVP 1"                             ;
                 &kp TAB     &kp I       &kp LC(LALT) &kp O      &kp LC(F20)     &none       &none       &none       &none       &none
                 &lt TVP2 L  &kp LEFT    &kp LALT    &kp RIGHT   &kp SPACE       &none       &none       &none       &none       &none
     &kp J       &kp LSHFT   &kp LC(C)   &kp BSPC    &kp LC(V)   &kp LC(F19)     &none       &none       &none       &none       &none       &none        
-                                        &trans      &kp LC(F14) &kp LC(F13)     &none       &none       &none    
+                                        ___         &kp LC(F14) &kp LC(F13)     &none       &none       &none    
                         >;
                 };
 
@@ -244,10 +244,10 @@ label= "TVP 2"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp LC(F18) &kp LS(I)  &kp LS(HOME) &kp LS(O)   &kp LS(F)       &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &trans      &kp LS(LEFT) &kp LC(F17) &kp LS(RIGHT) &kp RET      &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &kp J       &kp LS(C)   &kp LC(F16) &kp LS(V)   &kp LC(F15)     &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
-                                        &trans      &kp LC(F12) &kp LC(F11)     &trans      &trans      &trans      
+                &kp LC(F18) &kp LS(I)  &kp LS(HOME) &kp LS(O)   &kp LS(F)       ___         &kp F7      &kp F8      &kp F9      &kp F12
+                ___         &kp LS(LEFT) &kp LC(F17) &kp LS(RIGHT) &kp RET      ___         &kp F4      &kp F5      &kp F6      &kp F11  
+    ___         &kp J       &kp LS(C)   &kp LC(F16) &kp LS(V)   &kp LC(F15)     ___         &kp F1      &kp F2      &kp F3      &kp F10     ___            
+                                        ___         &kp LC(F12) &kp LC(F11)     ___         ___         ___         
                         >;
                 };
         };
