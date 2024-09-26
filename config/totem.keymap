@@ -47,8 +47,8 @@
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
 #include "includes/behaviors_homerow_mods.dtsi"
-#include "includes/behaviors_mod_morph.dtsi"
 #include "includes/behaviors_other.dtsi"
+#include "includes/behaviors_mod_morph.dtsi"
 
 / {
 
