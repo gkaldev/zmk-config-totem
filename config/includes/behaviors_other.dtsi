@@ -216,13 +216,18 @@
             #endif
         };
 
+        /*
+         * Usage: &lt_sym_word SYM SYM
+         * Tap: Sticky layers
+         * Hold: Momentary
+         */
         lt_sym_word: lt_sym_word {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
 
-            bindings = <&mo>, <&sk>;
+            bindings = <&mo>, <&sl>;
         };
 
        /*
