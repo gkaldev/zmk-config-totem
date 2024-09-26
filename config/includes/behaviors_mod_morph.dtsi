@@ -23,9 +23,9 @@
             #binding-cells = <0>;
 
             #ifdef HAS_CAPSLOCK
-                bindings = <&sk LSHFT>, <&caps_word_capslock>;
+                bindings = <&sklt NUM LSHFT>, <&caps_word_capslock>;
             #else
-                bindings = <&sk LSHFT>, <&caps_word>;
+                bindings = <&sklt NUM LSHFT>, <&caps_word>;
             #endif
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -36,9 +36,9 @@
             #binding-cells = <0>;
 
             #ifdef HAS_CAPSLOCK
-                bindings = <&sk RSHFT>, <&caps_word_capslock>;
+                bindings = <&sklt NUM RSHFT>, <&caps_word_capslock>;
             #else
-                bindings = <&sk RSHFT>, <&caps_word>;
+                bindings = <&sklt NUM RSHFT>, <&caps_word>;
             #endif
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
