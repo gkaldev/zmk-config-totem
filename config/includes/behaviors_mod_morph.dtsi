@@ -18,27 +18,27 @@
          *
          * Credits to urob for this genius combo.
          */
-        mm_shift_caps_word_l: mm_shift_caps_word_l {
+        mm_shift_nav_caps_word_l: mm_shift_caps_word_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
 
             #ifdef HAS_CAPSLOCK
-                bindings = <&sklt NUM LSHFT>, <&caps_word_capslock>;
+                bindings = <&sklt NAV LSHFT>, <&caps_word_capslock>;
             #else
-                bindings = <&sklt NUM LSHFT>, <&caps_word>;
+                bindings = <&sklt NAV LSHFT>, <&caps_word>;
             #endif
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_shift_caps_word_r: mm_shift_caps_word_r {
+        mm_shift_nav_caps_word_r: mm_shift_caps_word_r {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
 
             #ifdef HAS_CAPSLOCK
-                bindings = <&sklt NUM RSHFT>, <&caps_word_capslock>;
+                bindings = <&sklt NAV RSHFT>, <&caps_word_capslock>;
             #else
-                bindings = <&sklt NUM RSHFT>, <&caps_word>;
+                bindings = <&sklt NAV RSHFT>, <&caps_word>;
             #endif
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
