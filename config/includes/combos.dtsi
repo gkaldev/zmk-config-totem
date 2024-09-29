@@ -11,7 +11,7 @@
 
 ZMK_COMBO(esc,    &kp ESC,       LT3 LT2,     BASE NAV_WORD NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(cancel, &kp K_CANCEL,  LT4 LT3,     BASE NAV_WORD NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(ret,    &kp RETURN,    RB3 RB2,     BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(ret,    &kp RETURN,    RM3 RM2,     BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 // ZMK_COMBO(mouse, &smart_mouse, LT3 LT1,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Combos overlapping HRMs are set up as hold-taps themselves to allow for instantaneous
