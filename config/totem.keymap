@@ -34,9 +34,7 @@
 #define NAV 4
 #define NUM 5
 #define SYM 6
-#define ADJUST  7
-#define TVP1 8
-#define TVP2 9
+// #define ADJUST  7
 
 #define ___ &trans
 
@@ -64,7 +62,7 @@
 //├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤
   &kp LSHFT  &kp Z            &kp X            &kp C            &kp V            &kp B                       &kp N            &kp M            &kp COMMA        &kp DOT          &kp FSLH         &kp RSHFT
 //├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤ ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┤ ├──────┤
-                                &ltog ADJUST TAB     &lt_num_word NUM NUM       &lt_sym_word SYM SYM         &mm_shift_nav_caps_word_r  &mm_spc_unds_layer    &kp RET
+                                &ltog TAB TAB        &lt_num_word NUM NUM       &lt_sym_word SYM SYM         &mm_shift_nav_caps_word_r  &mm_spc_unds_layer    &kp RET
 //╰──────╯                    ╰─────────────────────┴─────────────────────┴─────────────────────╯ ╰──────╯ ╰─────────────────────┴─────────────────────┴─────────────────────╯                    ╰──────╯
         >;
       };
