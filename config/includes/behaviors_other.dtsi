@@ -210,7 +210,7 @@
             tapping-term-ms = <200>;
 
             #ifdef HAS_UROB
-                bindings = <&mo>, <&num_word>;
+                bindings = <&mo>, <&sl>;
             #else
                 bindings = <&mo>, <&tog>;
             #endif
