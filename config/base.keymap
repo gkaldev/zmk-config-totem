@@ -31,6 +31,7 @@
     #define RP SQT  // If no extra col for pinky middle, remap semicolon to sqt
 #else
     #define RP SEMICOLON
+#endif
 
 #define BASE 0
 #define NAV_WORD 1
