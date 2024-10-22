@@ -25,8 +25,14 @@
             bindings = <&kp>,  <&kp>;
 
             flavor = "balanced";
+
+            // how long must a key be held to trigger hold behavior
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+ 
+            // sets threshold to press twice to always trigger the tap behavior (like to hold down backspace, can tap twice within this term)
             quick-tap-ms = <175>;                // repeat on tap-into-hold
+
+            // like quick-tap-ms but works for any key pressed before it. Removes input delay, and is useful for HRM.
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
