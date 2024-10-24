@@ -35,8 +35,9 @@
             // like quick-tap-ms but works for any key pressed before it. Removes input delay, and is useful for HRM.
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 
+            // pressing any of these keys before tapping-term-ms generates a tap
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
-            hold-trigger-on-release;
+            hold-trigger-on-release; // delay positional check until key-release
         };
 
         hm_r: homerow_mods_right {
